@@ -26,7 +26,7 @@ a {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0,0,0,0.5);
 }
 
 .hero h1, .hero p, .hero a {
@@ -47,9 +47,10 @@ a {
 .hero a {
 	background: #e10600;
 	color: white;
-	padding: 15px 25px;
+	padding: 18px 30px;
 	border-radius: 8px;
 	font-weight: bold;
+	font-size: 18px;
 	transition: 0.3s;
 }
 
@@ -58,9 +59,9 @@ a {
 }
 
 .productos {
-	background: #A19D9C;
-	padding: 70px 20px;
+	padding: 80px 20px;
 	text-align: center;
+	background: white;
 }
 
 .productos h2 {
@@ -76,12 +77,15 @@ a {
 
 .producto {
 	background: white;
-	color: blue;
-	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 	padding: 25px;
 	width: 280px;
 	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 	transition: 0.3s;
+}
+
+.producto:hover {
+	transform: translateY(-5px);
 }
 
 .producto img {
@@ -92,49 +96,53 @@ a {
 	margin: 10px 0;
 }
 
-.producto:hover {
-	transform: translateY(-5px);
-	background: #303030;
+.producto h3 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.producto p {
+	font-size: 16px;
+	margin: 8px 0;
 }
 
 .ventajas {
-	background: #f8f8f8;
-	color: white;
 	padding: 70px 20px;
 	text-align: center;
+	background: #f8f8f8;
 }
 
 .ventajas h2 {
-	color: black;
 	margin-bottom: 40px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
 }
 
 .ventajas-container {
 	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
 	justify-content: center;
 }
 
+.ventajas-container ul {
+	list-style: none;
+	padding: 0;
+}
+
 .ventajas-container ul li {
-	background: #262626;
-	padding: 25px;
-	width: 280px;
-	border-radius: 12px;
+	background: white;
+	padding: 20px;
+	margin: 10px 0;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 	transition: 0.3s;
 }
 
 .ventajas-container ul li:hover {
-	transform: translateY(-5px);
-	background: #303030;
+	transform: translateY(-3px);
 }
 
 .contacto {
 	padding: 70px 20px;
 	text-align: center;
+	background: white;
 }
 
 .contacto h2 {
@@ -145,6 +153,7 @@ a {
 	display: inline-block;
 	margin-top: 25px;
 	background: #25D366;
+	color: white;
 	padding: 15px 25px;
 	border-radius: 8px;
 	font-weight: bold;
@@ -156,12 +165,12 @@ a {
 }
 
 footer {
-	margin-bottom: 20px;
-	align-items: center;
+	margin-top: 40px;
 	text-align: center;
-	color: white;
-	background: #1a1a1a;
-	font-size: 16px;
+	font-size: 14px;
+	padding: 20px;
+	background: #f2f2f2;
+	color: #555;
 }
 
 @media (max-width: 768px) {
@@ -186,8 +195,5 @@ footer {
 		width: 90%;
 		max-width: 350px;
 	}
-
-	footer {
-		font-size: 16px;
-	}
 }
+
